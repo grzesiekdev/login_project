@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Login</title>
+
   <!-- dodajemy kod .css odpowiadający za stylowanie -->
   <link rel="stylesheet" type="text/css" href="login.css" />
-
 
 </head>
 
@@ -14,6 +14,7 @@
   <main id="main-holder">
     <h1 id="login-header">Login</h1>
 
+    <!-- formularz pobierający dane od użytkownika oraz przekazujący je za pomocą metody GET, skąd są pobierane przez skrypt login.js -->
     <form id="login-form">
       <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
       <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
@@ -21,7 +22,7 @@
     </form>
 
     <!-- dodajemy diva odpowiedzialnego za wyświetlatnie errorów -->
-    <div id="login-error-msg">Error!</div>
+    <div id="login-error-msg">Incorrect login or password!</div>
 
   </main>
 
